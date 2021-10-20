@@ -1,3 +1,6 @@
+// ignore_for_file: prefer_const_constructors
+
+import 'package:ciet_apresentacao/tcc.dart';
 import 'package:flutter/material.dart';
 
 class Versoes extends StatefulWidget {
@@ -33,7 +36,7 @@ class _VersoesState extends State<Versoes> {
     List descricao = [
       "Entrada no mercado de trabalho. Cargo de desenvolvedora mobile na empresa Travel IT.",
       "Inicio cursos de UX research e desenvolvimento Android e IOS com flutter.",
-      "Participação Mostra de Ciências e Tecnologia Instituto 3M.",
+      "Finalista na Mostra de Ciências e Tecnologia do Instituto 3M.",
       "Criação de conteúdo sobre flutter no linkedin.",
       "Trabalho como vendedora de biquínis do Rio de Janeiro (vendas pela internet).",
       "Retomada curso de inglês na escola Yázigi.",
@@ -41,7 +44,7 @@ class _VersoesState extends State<Versoes> {
       "Terceiro ano escola técnica, aprofundamento dos conhecimentos sobre python, java e sql.",
       "Trabalho como vendedora de brigadeiros (produção própria e venda em comércios).",
       "Curso de postura e imagem profissional.",
-      "Participação olimpíadas de história, matemática e programação",
+      "Participação olimpíadas de história, matemática e programação.",
       "Segundo ano escola técnica, conhecimento sobre novas linguagens (python, java, C# e sql).",
       "Aniversário do CEMEP e CEPA.",
       "Primeiro ano escola técnica, aprendendo a programar. Desenvolvimento em C++, portugol e banco de dados Access.",
@@ -54,6 +57,17 @@ class _VersoesState extends State<Versoes> {
         backgroundColor: const Color(0xFFFF0000),
         title: const Text("Histórico de versões"),
         automaticallyImplyLeading: false,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 8.0),
+            child: IconButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => TCCTelas()));
+                },
+                icon: const Icon(Icons.school)),
+          )
+        ],
       ),
       body: Container(
         padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),

@@ -1,5 +1,5 @@
 import 'package:ciet_apresentacao/avaliacoes.dart';
-import 'package:ciet_apresentacao/features.dart';
+import 'package:ciet_apresentacao/competencias.dart';
 import 'package:ciet_apresentacao/home.dart';
 import 'package:ciet_apresentacao/sobre.dart';
 import 'package:ciet_apresentacao/versoes.dart';
@@ -20,7 +20,7 @@ class _BarNavigationState extends State<BarNavigation> {
     const Sobre(),
     const Versoes(),
     const Home(),
-    const Features(),
+    const Competencias(),
     const Avaliacoes(),
   ];
 
@@ -76,7 +76,7 @@ class _BarNavigationState extends State<BarNavigation> {
                                     color: currentTab == 0
                                         ? const Color(0xFFFF0000)
                                         : Colors.grey[300],
-                                    size: 31),
+                                    size: 30),
                                 Text(
                                   'Sobre',
                                   style: TextStyle(
@@ -104,7 +104,7 @@ class _BarNavigationState extends State<BarNavigation> {
                                     color: currentTab == 1
                                         ? const Color(0xFFFF0000)
                                         : Colors.grey[300],
-                                    size: 28),
+                                    size: 29),
                                 Text(
                                   'Versões',
                                   style: TextStyle(
@@ -118,13 +118,14 @@ class _BarNavigationState extends State<BarNavigation> {
                           ),
                           Container(
                             width: 30,
+                            margin: EdgeInsets.only(right: 6, left: 15),
                           ),
                           //Features
                           MaterialButton(
                             minWidth: 50,
                             onPressed: () {
                               setState(() {
-                                currentScreen = const Features();
+                                currentScreen = const Competencias();
                                 currentTab = 3;
                               });
                             },
@@ -135,9 +136,9 @@ class _BarNavigationState extends State<BarNavigation> {
                                     color: currentTab == 3
                                         ? const Color(0xFFFF0000)
                                         : Colors.grey[300],
-                                    size: 28),
+                                    size: 29),
                                 Text(
-                                  'Features',
+                                  'Skills',
                                   style: TextStyle(
                                       color: currentTab == 3
                                           ? const Color(0xFFFF0000)
@@ -164,7 +165,7 @@ class _BarNavigationState extends State<BarNavigation> {
                                   color: currentTab == 4
                                       ? const Color(0xFFFF0000)
                                       : Colors.grey[300],
-                                  size: 33,
+                                  size: 30,
                                 ),
                                 Text(
                                   'Avaliações',

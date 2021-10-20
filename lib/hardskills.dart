@@ -14,7 +14,7 @@ class HardSkill extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 20.0, left: 3),
+              padding: const EdgeInsets.only(top: 10.0, left: 3),
               child: Text(
                 "Linguagens de programação",
                 style: estiloTitulo,

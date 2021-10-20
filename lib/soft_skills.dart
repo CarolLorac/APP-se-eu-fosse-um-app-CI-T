@@ -7,37 +7,69 @@ class SoftSkills extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.white,
         body: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 40.0, horizontal: 20),
+          padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 20),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "Autoconfiança",
-                style: style,
-              ),
-              const Divider(),
-              Text("Bom relacionamento interpessoal", style: style),
-              const Divider(),
-              Text("Receptividade a feedback", style: style),
-              const Divider(),
-              Text("Trabalho em equipe", style: style),
-              const Divider(),
-              Text("Empatia", style: style),
-              const Divider(),
-              Text("Responsabilidade", style: style),
-              const Divider(),
-              Text("Resiliência", style: style),
-              const Divider(),
-              Text("Prestatividade", style: style),
-              const Divider(),
-              Text("Liderança", style: style),
-              const Divider(),
-              Text("Criatividade", style: style),
-              const Divider(),
-              Text("Positividade", style: style),
-            ],
-          ),
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: Text(
+                    "Autoconfiança",
+                    style: style,
+                  ),
+                ),
+                const Divider(),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: Text("Bom relacionamento interpessoal", style: style),
+                ),
+                const Divider(),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: Text("Receptividade a feedback", style: style),
+                ),
+                const Divider(),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: Text("Trabalho em equipe", style: style),
+                ),
+                const Divider(),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: Text("Determinação", style: style),
+                ),
+                const Divider(),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: Text("Responsabilidade", style: style),
+                ),
+                const Divider(),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: Text("Resiliência", style: style),
+                ),
+                const Divider(),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: Text("Prestatividade", style: style),
+                ),
+                const Divider(),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: Text("Liderança", style: style),
+                ),
+                const Divider(),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: Text("Criatividade", style: style),
+                ),
+                const Divider(),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: Text("Positividade", style: style),
+                ),
+              ]),
         ));
   }
 }

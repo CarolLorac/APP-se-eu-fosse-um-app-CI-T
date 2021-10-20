@@ -1,34 +1,49 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+class TCCTelas extends StatefulWidget {
+  const TCCTelas({Key? key}) : super(key: key);
 
   @override
-  _HomeState createState() => _HomeState();
+  _TCCTelasState createState() => _TCCTelasState();
 }
 
-class _HomeState extends State<Home> {
-  int indiceAtual = 2;
-
+class _TCCTelasState extends State<TCCTelas> {
   //imagens, em sequência, que serão exibidas
   final List<String> imagens = [
-    "images/sorriso.png",
-    "images/mae_pai.png",
-    "images/futevolei.png",
-    "images/praia.png",
-    "images/fto_familia.PNG",
-    "images/programando.png",
-    "images/cemep.png",
-    "images/doacaoSangue.png",
+    "images/tcc/splash.jpg",
+    "images/tcc/tela_inicio.jpg",
+    "images/tcc/login.jpg",
+    "images/tcc/restaurar_senha.jpg",
+    "images/tcc/criar_conta.jpg",
+    "images/tcc/home.jpg",
+    "images/tcc/notificacoes.jpg",
+    "images/tcc/perfil.jpg",
+    "images/tcc/como_funciona.jpg",
+    "images/tcc/teste_aptidao.jpg",
+    "images/tcc/solicitacao_doacao.jpg",
+    "images/tcc/cadastro_solicitacao.jpg",
+    "images/tcc/tipos_sanguineos.jpg",
+    "images/tcc/locais_doar.jpg",
+    "images/tcc/regras.jpg",
+    "images/tcc/campanhas.jpg",
+    "images/tcc/experiencias.jpg",
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.black),
+        backgroundColor: Colors.white,
+        title: const Text(
+          "Aplicativo Doe Vida (TCC)",
+          style: TextStyle(color: Colors.black),
+        ),
+      ),
       backgroundColor: Colors.white,
       body: Padding(
-        padding: const EdgeInsets.only(top: 50.0),
+        padding: const EdgeInsets.only(top: 0.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
@@ -36,7 +51,7 @@ class _HomeState extends State<Home> {
             //definindo caracteristicas das imagens e do carrosel
             CarouselSlider(
               options: CarouselOptions(
-                  height: 520,
+                  height: 610,
                   autoPlayInterval: const Duration(seconds: 3),
                   autoPlayAnimationDuration: const Duration(seconds: 3),
                   enlargeCenterPage: true,
